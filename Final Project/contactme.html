@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Hall</title>
+    <link href="css/base.css" rel="stylesheet" />
+    <link href="css/contactme.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="contactme.html">Contact Me</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <img id="logo" src="images/logo.png" alt="Your Logo">
+    <div id="topLeftText">Andrew Hall</div>
+
+    <div class="container">
+        <div class="form">
+
+            <form>
+                <h2>Contact Me</h2>
+                <label for="username">Name:</label>
+                <input type="text" id="username" name="username" placeholder="John Doe">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com">
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    placeholder="123-456-7890">
+
+                <label for="reason">What is this contact for?</label>
+                <div id="reason">
+                    <ol type="a" class="radioButtons">
+                        <li>
+                            <input type="radio" id="q1a" name="q1" value="a" >
+                            <label for="q1a">Work</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q1b" name="q1" value="b" >
+                            <label for="q1b">Family</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q1c" name="q1" value="c" >
+                            <label for="q1c">School</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q1d" name="q1" value="d" >
+                            <label for="q1d">Sports</label><br>
+                        </li>
+                    </ol>
+                </div>
+
+                <label for="message">Feedback:</label>
+                <textarea id="message" name="message" rows="6" placeholder="Type Here" required></textarea>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </div>
+
+        <div class="socials">
+            <form class="socials">
+                <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"
+                        width="75" height="75" class="hoverable"></a>
+                <br>
+                <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter" width="75"
+                        height="75" class="hoverable"></a>
+                <br>
+                <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"
+                        width="75" height="75" class="hoverable"></a>
+                <br>
+                <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.png" alt="Twitter"
+                        width="75" height="75" class="hoverable"></a>
+                <br>
+                <a href="https://www.youtube.com" target="_blank"><img src="images/youtube.png" alt="Instagram"
+                        width="75" height="75" class="hoverable"></a>
+            </form>
+        </div>
+    </div>
+</body>

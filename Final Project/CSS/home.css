@@ -1,0 +1,38 @@
+@import url(base.css);
+
+#danceimage {
+    float: left;
+}
+
+figcaption{
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 5px;
+}
+
+.text {
+    font-size: 30px;
+    padding-left: 30px;
+    text-align: center; 
+}
+
+@media (max-aspect-ratio: 1/1){
+    p {
+        width: 90%
+    }
+
+    #mainimage {
+        width: 90%;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap
+    }
+}

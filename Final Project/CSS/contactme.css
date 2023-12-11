@@ -1,0 +1,92 @@
+body {
+    margin: 20px;
+}
+
+form {
+    max-width: 600px;
+}
+
+#message {
+    max-width: 600px;
+}
+
+ol {
+    line-height: 1.5em;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #FFFFFF;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #808080;
+}
+
+img.hoverable:hover {
+    transform: scale(0.8);
+}
+
+img.hoverable {
+    transition: transform 0.3s ease;
+    width: 65px;
+    height: 65px;
+}
+
+.radioButtons input {
+    width: 10%;
+}
+.checkBoxes input {
+    width: 10%;
+}
+.socialButtons {
+    text-align: right;
+}
+
+.container {
+    display: grid;
+    /* align-items: center; */
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 5%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, sans-serif;
+}
+
+.form {
+    grid-column: 1;
+    grid-row: 1;
+    /* width: 60%; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12%;
+}
+
+.socials {
+    grid-column: 2;
+    grid-row: 1;
+    /* width: 60%; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-aspect-ratio: 1/1){
+    body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap
+    }
+}
